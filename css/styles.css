@@ -588,6 +588,28 @@ text-shadow:1px 1px #73757E;
     color: var(--txtaccent4);
     font-weight: 800;
 }
+#sec-8 h1{
+    text-transform: uppercase;
+    font-size: 1.7rem;
+    margin-bottom: 1.6rem;
+    color: var(--txtaccent4);
+    font-weight: 800;
+}
+#sec-9 h1{
+    text-transform: uppercase;
+    font-size: 1.7rem;
+    margin-bottom: 1.6rem;
+    color: var(--txtaccent4);
+    font-weight: 800;
+}
+#sec-8 {
+    margin-bottom: 50px; /* Adjust the value as needed */
+}
+
+#sec-9 {
+    margin-top: 50px; /* Adjust the value as needed */
+}
+
 #sec-5 h1+p{
     color: var(--txtaccent4);
     padding: 0px 2rem;
@@ -676,19 +698,26 @@ text-shadow:1px 1px #73757E;
     border-style: none;
     color: var(--textaccent3);
 }
-#sec-5 .contactUs form input[type=submit]{
-    padding: 6px 20px;
+#sec-5 .contactUs form input[type=submit] {
+    margin-top: 20px; /* Adds space above the submit button */
+    padding: 6px 70px;
     text-transform: uppercase;
     font-weight: 600;
     background-color: var(--textaccent3);
     color: var(--txtaccent5);
 }
+
+
 #sec-5 .contactUs form input:focus{
     box-shadow: inset 0px 0px 10px var(--txtaccent1);
 }
 #sec-5 .contactUs form input[type=submit]:hover{
     box-shadow: inset 0px 0px 10px var(--txtaccent1);
 }
+#sec-5 .contactUs form fieldset:last-of-type {
+    margin-top: 0px; /* Adds space above the submit button */
+}
+
 #sec-5 .contactUs form input+p{
     width: 100%;
     margin: 0px auto;
