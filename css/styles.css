@@ -5,6 +5,74 @@
     outline-style: none;
 }
 
+
+/* -------------------------------logo-------------------------
+header {
+    display: flex; /* Use flexbox to align items */
+    align-items: center; /* Vertically center the items */
+    justify-content: space-between; /* Space between items */
+    padding: 10px 20px; /* Adjust padding as necessary */
+}
+
+.container {
+    display: flex; /* Flexbox for alignment */
+    align-items: center; /* Align items vertically */
+    width: 100%; /* Full width */
+}
+
+.logo img {
+    width: 250px; /* Set a specific width for the logo */
+    height: 100px; /* Maintain aspect ratio */
+    border-radius: 15px; /* Optional: add rounded corners */
+    transition: transform 0.3s, box-shadow 0.3s; /* Add transition for hover effect */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Soft shadow for depth */
+}
+
+.logo img:hover {
+    transform: scale(1.05) translateY(-5px); /* Slightly enlarge logo and move up on hover */
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3); /* Enhance shadow on hover */
+}
+
+nav {
+    display: flex; /* Flexbox for navigation items */
+    gap: 20px; /* Space between navigation items */
+}
+
+nav a {
+    text-decoration: none; /* Remove underline from links */
+    color: #333; /* Text color */
+    font-weight: bold; /* Make the text bold */
+    transition: color 0.3s; /* Transition effect on hover */
+}
+
+nav a:hover {
+    color: #007BFF; /* Change color on hover */
+}
+ */
+
+/* Adjust navigation */
+nav {
+    margin-left: auto; /* Push nav to the right */
+}
+
+nav a {
+    margin: 0 15px; /* Add spacing between navigation links */
+}
+
+/* Optional: Responsive adjustments */
+@media (max-width: 768px) {
+    .logo img {
+        width: 160px; /* Smaller logo for mobile */
+        height:auto;
+    }
+
+    nav {
+        flex-direction: column; /* Stack navigation items vertically */
+        align-items: center; /* Center items */
+    }
+}
+
+
 article p {
     margin: 0;
     padding: 0;
@@ -605,6 +673,20 @@ text-shadow:1px 1px #73757E;
 #sec-8 {
     margin-bottom: 50px; /* Adjust the value as needed */
 }
+#sec-3 .cont {
+    display: flex;
+    flex-wrap: wrap; /* Ensures items wrap properly */
+    justify-content: space-between; /* Spreads items evenly */
+    gap: 20px; /* Optional: Add gap if needed between the cards */
+}
+
+
+#sec-3 .card {
+    flex: 1 1 30%; /* Adjusts the size of each card, ensuring flexibility */
+    min-width: 250px; /* Ensures cards don’t get too small */
+    box-sizing: border-box; /* Include padding and border in width */
+}
+
 
 #sec-9 {
     margin-top: 50px; /* Adjust the value as needed */
