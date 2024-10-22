@@ -33,6 +33,29 @@ header {
     box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3); /* Enhance shadow on hover */
 }
 
+.logo1 {
+    display: flex;               /* Use flexbox for alignment */
+    /* Align items to the right */
+margin-right: 200px;
+    align-items: center;         /* Vertically center the logo */
+    margin-top: 15px;           /* Add space above the logo */
+    margin-left: 130px;          /* This ensures it takes available space to the left */
+}
+
+.logo1 img {
+    width: 300px;               /* Set a specific width for the logo */
+    height: auto;               /* Maintain aspect ratio */
+    border-radius: 15px;        /* Optional: add rounded corners */
+    transition: transform 0.3s, box-shadow 0.3s; /* Add transition for hover effect */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Soft shadow for depth */
+}
+
+.logo1 img:hover {
+    transform: scale(1.05) translateY(-5px); /* Slightly enlarge logo and move up on hover */
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3); /* Enhance shadow on hover */
+}
+
+
 nav {
     display: flex; /* Flexbox for navigation items */
     gap: 20px; /* Space between navigation items */
@@ -496,6 +519,7 @@ html {
     max-width: 63%;
     margin-top: 40px;
 }
+
 #sec-2 article .cont{
     background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3));
     border-radius: 10px;
