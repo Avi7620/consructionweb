@@ -443,14 +443,31 @@
         $('#bootstrapForm').submit(function (event) {
             event.preventDefault(); // Prevent the default form submission
     
-            // You can handle your form data here if needed
-            // For example, you could use AJAX to send the data to your server
-            
-            // After handling the form submission, redirect to your HTML page
-            alert('Form Submitted. Thanks.'); // Optional: Show a confirmation message
-            window.location.href = 'index.html'; // Replace with your desired page URL
+            var formData = $(this).serializeArray();
+    
+            // Send the data to your Google Form
+            $.ajax({
+                url: 'https://docs.google.com/forms/d/e/1FAIpQLSez4HodbnMJtceQqsunCyfn_YfxhhDXXzi2TGJ9KmiJw_v51w/formResponse',
+               // https://docs.google.com/forms/d/e/1FAIpQLSez4HodbnMJtceQqsunCyfn_YfxhhDXXzi2TGJ9KmiJw_v51w/viewform?usp=sf_link
+                
+                data: formData,
+                type: 'POST',
+                dataType: 'xml',
+                statusCode: {
+                    0: function() {
+                        alert('Form Submitted. Thanks.');
+                    },
+                    200: function() {
+                        alert('Form Submitted. Thanks.');
+                    }
+                }
+            });
+    
+            // Optional: Show a confirmation message
+            alert('Form Submitted. Thanks.');
         });
     </script>
+    
     
 
 
